@@ -1,0 +1,47 @@
+body {
+  background-color: #d4ebff;
+}
+.page-wrapper {
+  padding: 30px;
+  max-width: 90%;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.page-title {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.text-right {
+  text-align: right;
+}
+.btn-group-end {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.custom-modal .MuiDialog-paperScrollPaper {
+  border-radius: 25px;
+}
+.custom-modal .modal-title {
+  background-color: #e7f4ff;
+  margin-bottom: 20px;
+}
+.custom-modal .modal-title h2 {
+  color: #111;
+  font-weight: bold;
+}
+.custom-modal .btn-red.MuiButton-root {
+  background-color: #ff4c4c;
+  color: #fff;
+}
+.custom-modal .MuiDialogActions-root {
+  padding: 20px;
+}
+.modal-table input {
+  max-width: 100px;
+}
