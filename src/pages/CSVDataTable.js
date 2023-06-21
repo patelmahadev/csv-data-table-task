@@ -170,13 +170,15 @@ const CSVDataTable = () => {
 
   const filterData = () => {
     if (userInput.length >= 3 || userInput.length === 0) {
-      const userInputLower = userInput.toLowerCase();
+      const userInputLower = userInput.toLowerCase().split(",");
       const filtered = csvData.filter((item) => {
         const itemPart = item[0]?.toLowerCase();
         const itemAltPart = item[1]?.toLowerCase();
 
-        const regex = new RegExp(userInputLower, "i");
-        return regex.test(itemPart) || regex.test(itemAltPart);
+        const arrayFiltered = userInputLower.some((el) => {
+          return itemPart.includes(el) || itemAltPart.includes(el);
+        });
+        return arrayFiltered;
       });
       setFilteredData(filtered);
       setFilterError("");
